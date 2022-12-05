@@ -76,7 +76,7 @@
         </div>
         <div class="nav__buttons">
           <!-- theme change button -->
-          <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
 
           <!-- toggle button -->
           <div class="nav__toggle" id="nav-toggle">
@@ -601,7 +601,6 @@
               <div class="contact__data">
                 <span class="contact__data-title">Email</span>
                 <span class="contact__data-info">chrismayer@email.com</span>
-                <a href="#" class="contact__button">Write me</a>
               </div>
 
               <div class="contact__data">
@@ -626,8 +625,8 @@
                   href="https://m.me/bedimcode"
                   target="_blank"
                   class="contact__button"
-                  >Write me</a
-                >
+                  >Write me<i class="ri-arrow-right-line"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -636,15 +635,94 @@
             <h3 class="contact__title">
               <i class="ri-send-plane-line"></i>Write me your project
             </h3>
+
+            <form action="#" class="contact__form" id="contact-form">
+              <div class="contact__form-div">
+                <label for="" class="contact__form-tag">Names</label>
+                <input
+                  type="text"
+                  name="user_name"
+                  required
+                  placeholder="Write your names"
+                  class="contact__form-input"
+                  id="contact-name"
+                />
+              </div>
+
+              <div class="contact__form-div">
+                <label for="" class="contact__form-tag">Mail</label>
+                <input
+                  type="text"
+                  name="user_email"
+                  required
+                  placeholder="Write your mail"
+                  class="contact__form-input"
+                  id="contact-email"
+                />
+              </div>
+
+              <div class="contact__form-div contact__form-area">
+                <label for="" class="contact__form-tag">Prject</label>
+                <textarea
+                  name="user_project"
+                  id="contact-project"
+                  placeholder="Write your project"
+                  class="contact__form-input"
+                ></textarea>
+              </div>
+
+              <p class="contact__message" id="contact-message"></p>
+              <button type="submit" class="contact__button">
+                Submit <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </form>
           </div>
         </div>
       </section>
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Chris</h1>
+        <p>Frontend Developer</p>
+
+        <ul class="footer__list">
+          <li>
+            <a href="#home" class="footer__link active-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="footer__link">Skills</a>
+          </li>
+
+          <li>
+            <a href="#project" class="footer__link">Projects</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social">
+          <a href="https://www.linkedin.com/" class="footer__social-link"
+            ><i class="ri-linkedin-box-line"></i
+          ></a>
+          <a href="https://github.com/" class="footer__social-link"
+            ><i class="ri-github-line"></i
+          ></a>
+          <a href="https://dribbble.com/" class="footer__social-link"
+            ><i class="ri-dribbble-line"></i
+          ></a>
+        </ul>
+        <span class="footer__copy">
+          &#169; Copyright rslSnmz. All rights reserved
+        </span>
+      </div>
+    </footer>
 
     <!--========== SCROLL UP ==========-->
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
 
     <!--=============== SCROLLREVEAL ===============-->
     <script src=""></script>
@@ -653,6 +731,10 @@
     <script src="/assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== EMAIL JS ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
